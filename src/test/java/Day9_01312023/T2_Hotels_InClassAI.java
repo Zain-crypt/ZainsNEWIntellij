@@ -49,7 +49,7 @@ public class T2_Hotels_InClassAI {
                 driver.findElement(By.xpath("//*[@id='destination_form_field']")).sendKeys(hotelDestinationsUS.get(i));
             } catch (Exception err) {
                 System.out.println("Unable to search hotel destinations: " + err);
-            }//end of click on calculate button try-catch block
+            }//end of click on search field and type in field
 
                //click on first drop down
             try {
@@ -58,8 +58,8 @@ public class T2_Hotels_InClassAI {
             } catch (Exception err) {
                 System.out.println("Unable to click on first dropdown for reason: " + err);
             }//end of clicking first dropdown
-                 //click search button
 
+                 //click search button
             try {
                 driver.findElement(By.xpath("//*[@id='search_button']")).click();
                Thread.sleep(2000);

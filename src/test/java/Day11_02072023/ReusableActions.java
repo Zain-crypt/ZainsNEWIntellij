@@ -21,9 +21,9 @@ public class ReusableActions {
         options.addArguments("incognito");
         WebDriver driver = new ChromeDriver(options);
 
-
         //at the end return the driver variable so it can be used on your test class
         return driver;
+
     }//end of chrome setup method
 
             //click is a void method which will just perform the action
@@ -69,5 +69,6 @@ public class ReusableActions {
         }
         return result;
     }//end of getText method
+
 
 }//end of class
